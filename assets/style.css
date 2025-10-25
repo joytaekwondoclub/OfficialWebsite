@@ -1,0 +1,56 @@
+
+:root{
+  --red:#d62828;
+  --blue:#0b3d91;
+  --gold:#f6b91d;
+  --bg:#0f1720;
+  --card: rgba(255,255,255,0.04);
+  --glass: rgba(255,255,255,0.06);
+  --text:#f3f4f6;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  margin:0; background:var(--bg); color:var(--text); line-height:1.5}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+header{backdrop-filter:blur(8px);background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-bottom:1px solid rgba(255,255,255,0.03)}
+nav{display:flex;align-items:center;justify-content:space-between;padding:14px 24px}
+.logo{display:flex;gap:12px;align-items:center}
+.logo img{height:48px}
+.nav-links{display:flex;gap:18px;align-items:center}
+.nav-links a{color:var(--text);text-decoration:none;font-weight:600;padding:8px 12px;border-radius:8px}
+.nav-links a:hover{background:var(--card)}
+
+.hero{display:flex;gap:24px;align-items:center;padding:48px 0}
+.hero .left{flex:1}
+.hero h1{font-size:2.6rem;margin:0;background:linear-gradient(90deg,#fff, var(--gold));-webkit-background-clip:text;color:transparent}
+.hero p.lead{opacity:0.9;font-size:1.05rem;margin-top:12px}
+.cta{display:flex;gap:12px;margin-top:20px}
+.btn{padding:12px 20px;border-radius:10px;border:none;cursor:pointer;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+.btn-primary{background:linear-gradient(90deg,var(--blue),var(--red));color:white}
+.btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text)}
+
+.hero .right{width:320px;background:var(--card);padding:18px;border-radius:14px;text-align:center}
+.coach-photo{width:100%;border-radius:10px;object-fit:cover}
+
+.section{padding:64px 0}
+.card{background:var(--card);padding:20px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);}
+
+.benefits-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:24px}
+
+.stat-grid{display:flex;gap:18px;flex-wrap:wrap;margin-top:20px}
+.stat{background:var(--glass);padding:18px;border-radius:10px;text-align:center;flex:1;min-width:160px}
+
+.success-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.success-card img{width:100%;height:180px;object-fit:cover;border-radius:8px;margin-bottom:12px}
+
+footer{padding:24px 0;border-top:1px solid rgba(255,255,255,0.03);margin-top:40px;}
+.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
+
+form input, form select, form textarea{width:100%;padding:12px;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text)}
+form button{margin-top:12px}
+
+@media(max-width:800px){
+  .hero{flex-direction:column}
+  .hero .right{width:100%}
+  .nav-links{display:none}
+}
