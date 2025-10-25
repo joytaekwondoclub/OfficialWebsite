@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 <style>
+
+
   body::before {
     content: "";
     position: fixed;
@@ -15,12 +17,31 @@
     z-index: -1;
     pointer-events: none;
   }
+
+  .logo-left {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  width: 120px; /* Adjust size as needed */
+}
+
+.logo-left img {
+  width: 100%;
+  height: auto;
+}
+
 </style>
+
+<!-- Add logo on left side -->
+<div class="logo-left">
+  <img src="assets/images/JTC_Logo.jpg" alt="JOY Taekwondo Club logo">
+</div>
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Home - Joy Taekwondo Club</title>
-<meta name="description" content="Joy Taekwondo Club — National-level coaching, SAI & SDAT trained coach. Build discipline, confidence and produce champions.">
+<meta name="description" content="Joy Taekwondo Club — National-level coaching, SAI & SDAT trained player. Build discipline, confidence and produce champions.">
 <link rel="icon" href="assets/images/JTC_Logo.jpg" type="image/jpeg">
 <link rel="stylesheet" href="assets/style.css">
 </head>
